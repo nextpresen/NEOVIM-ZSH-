@@ -1,0 +1,7 @@
+{
+    "suggest.enable": true,                  
+    "suggest.triggerAfterInsertEnter": true, 
+    "suggest.noselect": false,               
+    "python.pythonPath": "/usr/bin/python3", 
+    "coc.preferences.useQuickfixForLocations": false
+}

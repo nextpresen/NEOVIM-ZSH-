@@ -90,10 +90,10 @@ _G.packer_plugins = {
     path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  ["nvim-tree.lua"] = {
+  nerdtree = {
     loaded = true,
-    path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/nvim-tree/nvim-tree.lua"
+    path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-web-devicons"] = {
     loaded = false,
@@ -115,6 +115,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/takuyanagata/.local/share/nvim/site/pack/packer/start/vim-snippets",
+    url = "https://github.com/honza/vim-snippets"
   }
 }
 

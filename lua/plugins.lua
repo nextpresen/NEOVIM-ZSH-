@@ -11,12 +11,12 @@ require('packer').startup(function(use)
   }
   -- coc.nvim (補完エンジン)
   use {'neoclide/coc.nvim', branch = 'release'}
-
-  -- nvim-tree (ファイラ)
-  use {'nvim-tree/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons'}}
+  -- nerdtree (ファイラ)
+  use {'preservim/nerdtree', requires = {'ryanoasis/vim-devicons'}}
   -- telescope (検索ツール)
   use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
-
+  -- DJango
+  use 'honza/vim-snippets'
   -- その他のプラグインを追加する例
   -- Git ステータス表示
   use {
@@ -32,4 +32,4 @@ end)
 require('plugins.lualine')
 require('plugins.coc')
 require('plugins.telescope')
-require('plugins.nvim-tree')
+require('plugins.nerd-tree')

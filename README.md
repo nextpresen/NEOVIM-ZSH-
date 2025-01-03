@@ -9,18 +9,6 @@
         ├── nvim-tree.lua -- nvim-tree の設定
         └── telescope.lua -- telescope の設定
 
-## Nvim-Tree基本操作
-キー	動作
-o / <CR>	ファイルを開く / フォルダを展開
-a	ファイルまたはフォルダを作成
-d	ファイルまたはフォルダを削除
-r	名前を変更
-x	ファイルを切り取り
-y	ファイルをコピー
-p	切り取った/コピーしたファイルを貼り付け
-R	ツリーをリフレッシュ
-?	ヘルプを表示
-
 ## Telescope基本操作
 :Telescope find_files	ファイルを検索
 :Telescope live_grep	ファイル内のテキストを検索

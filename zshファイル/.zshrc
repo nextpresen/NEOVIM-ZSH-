@@ -18,9 +18,18 @@ PROMPT="%F{green}%n%f %F{cyan}($(arch))%f:%F{blue}%~%f"$'\n'"%# "
 autoload -Uz colors
 colors
 
-export LSCOLORS=cxfxcxdxbxegedabagacad
+export TERM=xterm-256color
 alias ll='ls -lGF'
 alias ls='ls -GF'
+
+########################################
+# exa エイリアス
+########################################
+if [[ $(command -v exa) ]]; then
+  alias ls='exa --icons --git'
+  alias lt='exa -T -L 3 -a -I "node_modules|.git|.cache" --icons'
+  alias ltl='exa -T -L 3 -a -I "node_modules|.git|.cache" -l --icons'
+fi
 
 ########################################
 # 補完
@@ -85,6 +94,13 @@ setopt hist_reduce_blanks
 # 高機能なワイルドカード展開を使用する
 setopt extended_glob
 
+# タブの設定
+
+set autoindent
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+
 #########################
 # Homebrew
 #########################
@@ -124,10 +140,12 @@ zinit ice wait'!0';  zinit light zsh-users/zsh-autosuggestions
 zinit ice wait'!0';  zinit light zdharma/fast-syntax-highlighting
 
 #########################
-# neovimのエイリアス
+# エイリアス設定
 #########################
 alias vi="nvim"
 alias vim="nvim"
+alias python=python3
+alias pip=pip3
 
 #########################
 # PATHの設定
